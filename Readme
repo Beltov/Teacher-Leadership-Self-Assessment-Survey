@@ -1,0 +1,33 @@
+Go to sheets.google.com
+Create new spreadsheet
+Name it "Teacher Leadership Assessment Responses"
+Copy the Sheet ID from URL:
+https://docs.google.com/spreadsheets/d/[THIS_IS_YOUR_SHEET_ID]/edit
+Step 2: Add Apps Script
+In your Sheet: Extensions → Apps Script
+Delete any existing code
+Copy ALL the code from the artifact above
+Replace YOUR_GOOGLE_SHEET_ID_HERE with your actual Sheet ID
+Save (Ctrl+S)
+Step 3: Deploy
+Click Deploy → New Deployment
+Type: Web app
+Execute as: Me
+Access: Anyone
+Click Deploy
+Copy the Web App URL
+Step 4: Enable in Your Website
+Open script.js
+Find these lines:
+javascript
+window.GOOGLE_SHEETS_ENABLED = false; // Change to true const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE'; // Add your URL
+Change to:
+javascript
+window.GOOGLE_SHEETS_ENABLED = true; const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_URL/exec';
+📊 What You'll Get in Google Sheets:
+Each submission creates a row with:
+Timestamp
+Name & Email
+All 33 question responses (0-4)
+Total Score (0-132)
+Leadership Category
