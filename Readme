@@ -27,7 +27,7 @@ window.GOOGLE_SHEETS_ENABLED = true; const GOOGLE_SCRIPT_URL = 'https://script.g
 📊 What You'll Get in Google Sheets:
 Each submission creates a row with:
 Timestamp
-Name & Email
+Email
 All 33 question responses (0-4)
 Total Score (0-132)
 Leadership Category
